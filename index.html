@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style type="text/css">
+p {
+  text-align: left;
+  color: red;
+}
+
+
+.button {
+  background-color: #4CAF50; 
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+</style>
+
+<button  class="button" type="button" onclick="myFunction()">Click Me</button>
+
+<p id="display"></p>
+
+<script>
+function myFunction() {
+  let text = "Are you sure you want to continue?";
+  if (confirm(text) == true) {
+    text = "You just clicked 'Yes'";
+  } else {
+    text = "You just clicked 'Cancel'";
+  }
+  document.getElementById("display").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
